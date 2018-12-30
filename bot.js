@@ -425,9 +425,9 @@ function isYoutube(str) {
      خروج البوت من الروم
      **${prefix}inv**
      لدعوت البوت
-     **{prefix}support**
+     **${prefix}support**
      سيرفر الدعم
-     **{prefix}bot**
+     **${prefix}bot**
      معلومات البوت
      prefix = ${prefix}
      ping = ${Date.now() - message.createdTimestamp}ms
@@ -450,7 +450,7 @@ client.on('message', message => {
 });
 
                             client.on('message', message => { //By |€¤GoM¤GoM¤€#1000
-                                if (message.content.startsWith("$bot")) { //By |€¤GoM¤GoM¤€#1000
+                                if (message.content.startsWith("8bot")) { //By |€¤GoM¤GoM¤€#1000
                                 message.channel.send({ //By |€¤GoM¤GoM¤€#1000
                                     embed: new Discord.RichEmbed() //By |€¤GoM¤GoM¤€#1000
                                         .setAuthor(client.user.username,client.user.avatarURL) //By |€¤GoM¤GoM¤€#1000
@@ -477,7 +477,7 @@ client.on('message', message => {
                             
                             
                              client.on('message', message => {
-                                                                      if (message.content === "$inv") {
+                                                                      if (message.content === "8inv") {
                                                                           if(!message.channel.guild) return;
                                                                       let embed = new Discord.RichEmbed()
                                                                       .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
@@ -488,7 +488,7 @@ client.on('message', message => {
                                                                  });  
                           
                                                                  client.on('message', message => {
-                                                                    if (message.content === "$support") {
+                                                                    if (message.content === "8support") {
                                                                     let embed = new Discord.RichEmbed()
                                                                  .setAuthor(message.author.username)
                                                                  .setColor("#9B59B6")
