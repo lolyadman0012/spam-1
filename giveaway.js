@@ -87,3 +87,4 @@ hours = 12;
     });
   }
 });
+client.login(process.env.BOT_TOKEN);
